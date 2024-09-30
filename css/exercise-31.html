@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.custom-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.custom-list li {
+    position: relative;
+    padding-left: 25px;
+    margin: 10px 0;
+}
+
+.custom-list li:before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #007bff;
+    font-size: 20px;
+}
+
+.custom-list li:after {
+    content: '';
+    display: block;
+    height: 1px;
+    background: #ccc;
+    margin-top: 5px;
+}
+    </style>
+</head>
+<body>
+    <ul class="custom-list"></ul>
+        <li>First Item</li>
+        <li>Second Item</li>
+        <li>Third Item</li>
+        <li>Fourth Item</li>
+    </ul>
+    
+    <p><a href="/index.html">Home Page</a></p>
+</body>
+</html>

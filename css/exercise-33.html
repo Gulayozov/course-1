@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.image-container {
+    position: relative;
+    width: 400px;
+    margin: 20px auto;
+}
+
+.image {
+    width: 100%;
+    display: block;
+    border-radius: 5px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 5px;
+}
+
+.image-container:hover .overlay {
+    opacity: 1;
+}
+
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img src="/img/img1.jpeg" alt="img1" class="image">
+        <div class="overlay">
+            <div class="overlay-text">Additional Information</div>
+        </div>
+    </div>
+    
+    <p><a href="/index.html">Home Page</a></p>
+</body>
+</html>

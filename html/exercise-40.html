@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <canvas id="myCanvas" width="400" height="400" style="border:1px solid #000000;"></canvas>
+
+    <script>
+        // Get the canvas element
+        var canvas = document.getElementById('myCanvas');
+        var ctx = canvas.getContext('2d');
+
+        // Draw a rectangle
+        ctx.fillStyle = "#FF0000"; // Red fill color
+        ctx.fillRect(50, 50, 150, 100); // Position (50,50) and size (150 width, 100 height)
+
+        // Draw a circle
+        ctx.beginPath();
+        ctx.arc(250, 250, 50, 0, 2 * Math.PI); // Center (250, 250), radius 50, full circle
+        ctx.fillStyle = "#0000FF"; // Blue fill color
+        ctx.fill(); // Fill the circle
+    </script>
+
+    <p><a href="index.html">Home Page</a></p>
+</body>
+</html>
